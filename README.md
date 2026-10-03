@@ -16,8 +16,12 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 jupyter nbconvert --execute --to notebook --inplace notebooks/01_m2_eda.ipynb
 ```
-Data: download from the UCI Machine Learning Repository (doi 10.24432/C5MC89) and place the CSV at
-`data/data.csv` if it is not already there. Check the dataset license before making this repository public.
+
+Data: `data/data.csv` is included in this repository, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+
+Dataset: Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021). Predict Students' Dropout and Academic Success [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5MC89
+
+Introductory paper: M. V. Martins, D. Tolledo, J. Machado, L. M. T. Baptista, V. Realinho. (2021) "Early prediction of student's performance in higher education: a case study", Trends and Applications in Information Systems and Technologies, vol. 1, Advances in Intelligent Systems and Computing series. Springer. DOI: 10.1007/978-3-030-72657-7_16
 
 ## Team and process
 Work is tracked with GitHub Issues/Project board; changes go through branches and pull requests
