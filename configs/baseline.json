@@ -1,0 +1,75 @@
+{
+  "seed": 42,
+  "dataset_md5": "9b2b50f41d0cefbbc3e8222d60032d91",
+  "primary_metric": "macro-F1",
+  "feature_sets": [
+    "early",
+    "full"
+  ],
+  "logreg_C_grid": [
+    0.01,
+    0.1,
+    1,
+    10,
+    100
+  ],
+  "cv": {
+    "folds": 5,
+    "repeats": 3
+  },
+  "stratified_random_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "expected_from_M2_memo": {
+    "majority": {
+      "early": [
+        0.222,
+        0.5
+      ],
+      "full": [
+        0.222,
+        0.5
+      ]
+    },
+    "stratified_random": {
+      "early": [
+        0.313,
+        0.373
+      ],
+      "full": [
+        0.313,
+        0.373
+      ]
+    },
+    "logreg": {
+      "early": [
+        0.651,
+        0.736
+      ],
+      "full": [
+        0.705,
+        0.773
+      ]
+    },
+    "tree_depth5": {
+      "early": [
+        0.549,
+        0.703
+      ],
+      "full": [
+        0.602,
+        0.72
+      ]
+    }
+  },
+  "dataset_md5_note": "MD5 of data.csv after normalising CRLF to LF. Raw MD5 is ee29c9ee9ea60654b5bb0a161c0a473d for the original CRLF download and 9b2b50f41d0cefbbc3e8222d60032d91 for the LF copy stored in Git."
+}
