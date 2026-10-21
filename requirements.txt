@@ -1,6 +1,11 @@
-pandas>=2.0
-numpy>=1.26
-scikit-learn>=1.4
-matplotlib>=3.8
-jupyter>=1.0
-nbformat>=5.9
+# Pinned versions used to produce the Milestone 3 results (Python 3.12)
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.8.0
+scipy==1.17.1
+matplotlib==3.10.8
+pytest>=8.0
+# Notebook tooling (used by the .ipynb files; versions not pinned yet - add them when someone records them)
+jupyter
+ipykernel
+seaborn
