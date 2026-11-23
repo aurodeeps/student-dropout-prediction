@@ -1,0 +1,12 @@
+{
+  "selected": "hgb",
+  "second": "rf",
+  "tuning_cv_top": {
+    "hgb": 0.6822,
+    "rf": 0.6794,
+    "logreg": 0.6679,
+    "tree": 0.6318
+  },
+  "runtime_seconds": 513.2,
+  "test_set_used": false
+}

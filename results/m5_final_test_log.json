@@ -1,0 +1,17 @@
+{
+  "selected_model": "hgb",
+  "best_params_sha256": "8ba54d008a6ed9a5b890838f12fd87514df00ffd98ddcf856e9ac1c33b1da6d5",
+  "trained_on_rows": 3760,
+  "test_rows": 664,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "bootstrap_resamples": 1000,
+  "software": "1.9.1",
+  "run_utc": "2026-11-20 06:29:25 UTC",
+  "runtime_seconds": 99.3
+}

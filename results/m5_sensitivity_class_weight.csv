@@ -1,0 +1,9 @@
+run_id,model,class_weight,macro_F1,recall_Dropout,recall_Enrolled,recall_Graduate
+S-CW-logreg-None,logreg,None,0.6361,0.7481,0.2311,0.9185
+S-CW-logreg-balanced,logreg,balanced,0.6734,0.691,0.5585,0.7886
+S-CW-tree-None,tree,None,0.5855,0.6984,0.16,0.9105
+S-CW-tree-balanced,tree,balanced,0.6288,0.6205,0.5748,0.7183
+S-CW-rf-None,rf,None,0.6049,0.7316,0.1585,0.9377
+S-CW-rf-balanced,rf,balanced,0.6764,0.6678,0.5956,0.7907
+S-CW-hgb-None,hgb,None,0.652,0.7241,0.3022,0.9084
+S-CW-hgb-balanced,hgb,balanced,0.6757,0.6719,0.5867,0.7918

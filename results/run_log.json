@@ -1,0 +1,27 @@
+{
+  "script": "scripts/run_baseline.py",
+  "seed": 42,
+  "dataset_md5": "9b2b50f41d0cefbbc3e8222d60032d91",
+  "split": {
+    "train": 3096,
+    "val": 664,
+    "test": 664
+  },
+  "test_set_used": false,
+  "tuned_C_by_feature_set": {
+    "early": 1,
+    "full": 1
+  },
+  "cv": {
+    "folds": 5,
+    "repeats": 3
+  },
+  "software": {
+    "python": "3.12.3",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "runtime_seconds": 18.6
+}

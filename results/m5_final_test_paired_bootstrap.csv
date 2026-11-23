@@ -1,0 +1,11 @@
+feature_set,comparison,mean_diff,ci95_low,ci95_high,ci_excludes_zero
+early,Gradient boosting minus Majority class,0.4762,0.4356,0.5141,True
+early,Gradient boosting minus Stratified random,0.3693,0.3157,0.4185,True
+early,Gradient boosting minus Logistic regression,-0.0178,-0.0479,0.0111,False
+early,Gradient boosting minus Decision tree,0.0619,0.027,0.0989,True
+early,Gradient boosting minus Random forest,0.0091,-0.0187,0.038,False
+full,Gradient boosting minus Majority class,0.5183,0.4801,0.5559,True
+full,Gradient boosting minus Stratified random,0.4113,0.3607,0.4584,True
+full,Gradient boosting minus Logistic regression,0.0102,-0.0189,0.0377,False
+full,Gradient boosting minus Decision tree,0.0508,0.0125,0.0873,True
+full,Gradient boosting minus Random forest,0.0008,-0.0238,0.0249,False

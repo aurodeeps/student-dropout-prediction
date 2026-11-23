@@ -1,0 +1,10 @@
+group,n,dropout_rate,macro_F1,dropout_recall
+All,664,0.3223,0.6986,0.7196
+Female,420,0.2333,0.6818,0.6735
+Male,244,0.4754,0.6923,0.7586
+No scholarship,501,0.4012,0.6803,0.7264
+Scholarship holder,163,0.0798,0.6824,0.6154
+Fees up to date,582,0.244,0.6723,0.6056
+Fees NOT up to date,82,0.878,0.4195,0.9444
+Age < 25,484,0.2273,0.6746,0.6
+Age >= 25,180,0.5778,0.6827,0.8462

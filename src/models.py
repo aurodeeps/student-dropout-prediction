@@ -9,11 +9,11 @@ from sklearn.tree import DecisionTreeClassifier
 from src.data import CATEGORICAL
 
 
-def make_pipeline(cols, model):
+def make_pipeline(cols, model, dense=False):
     """One-hot encode integer-coded categoricals, standardize the rest; fit on training data only."""
     cat = [c for c in CATEGORICAL if c in cols]
     num = [c for c in cols if c not in cat]
-    prep = ColumnTransformer([("cat", OneHotEncoder(handle_unknown="ignore"), cat),
+    prep = ColumnTransformer([("cat", OneHotEncoder(handle_unknown="ignore", sparse_output=not dense), cat),
                               ("num", StandardScaler(), num)])
     return Pipeline([("prep", prep), ("model", model)])
 

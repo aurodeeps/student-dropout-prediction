@@ -1,0 +1,4 @@
+probe,macro_F1,delta_vs_pipeline,note
+LogReg max_iter=100 (sklearn default) instead of 3000,0.6508,0.0,0 convergence warning(s)
+"Preprocessing fit on ALL rows (leakage, do not use)",0.6492,-0.0017,shows leakage effect is small here but is still a protocol error
+Stratified random over 10 seeds (mean),0.3372,0.0242,"sd 0.015, range 0.316-0.372; seed 42 gives 0.313"

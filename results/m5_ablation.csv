@@ -1,0 +1,19 @@
+run_id,model,variant,n_features,macro_F1_mean,macro_F1_sd,delta_vs_full,delta_sd
+A-hgb-1,hgb,Full early set (30),30,0.6775,0.01792,0.0,0.0
+A-hgb-2,hgb,"- financial (debtor, tuition up to date, scholarship)",27,0.6463,0.01867,-0.0312,0.01131
+A-hgb-3,hgb,"- macroeconomic (unemployment, inflation, GDP)",27,0.67266,0.01729,-0.00484,0.00972
+A-hgb-4,hgb,- financial and macroeconomic,24,0.64461,0.01339,-0.03289,0.01493
+A-hgb-5,hgb,"- personal attributes (gender, age, marital, nationality, international, displaced, special needs)",23,0.67761,0.01269,0.00012,0.00859
+A-hgb-6,hgb,"- parental background (qualification, occupation)",26,0.67529,0.01456,-0.00221,0.00953
+A-rf-1,rf,Full early set (30),30,0.67635,0.01824,0.0,0.0
+A-rf-2,rf,"- financial (debtor, tuition up to date, scholarship)",27,0.63722,0.02032,-0.03913,0.01235
+A-rf-3,rf,"- macroeconomic (unemployment, inflation, GDP)",27,0.6705,0.01934,-0.00585,0.0063
+A-rf-4,rf,- financial and macroeconomic,24,0.63801,0.02054,-0.03834,0.01263
+A-rf-5,rf,"- personal attributes (gender, age, marital, nationality, international, displaced, special needs)",23,0.67645,0.01968,0.0001,0.01006
+A-rf-6,rf,"- parental background (qualification, occupation)",26,0.67398,0.01928,-0.00237,0.00638
+A-logreg-1,logreg,Full early set (30),30,0.67323,0.01723,0.0,0.0
+A-logreg-2,logreg,"- financial (debtor, tuition up to date, scholarship)",27,0.64024,0.01677,-0.03299,0.01658
+A-logreg-3,logreg,"- macroeconomic (unemployment, inflation, GDP)",27,0.67344,0.01878,0.00021,0.00783
+A-logreg-4,logreg,- financial and macroeconomic,24,0.63555,0.01746,-0.03768,0.01633
+A-logreg-5,logreg,"- personal attributes (gender, age, marital, nationality, international, displaced, special needs)",23,0.67155,0.02132,-0.00168,0.00838
+A-logreg-6,logreg,"- parental background (qualification, occupation)",26,0.66646,0.01915,-0.00677,0.00838
