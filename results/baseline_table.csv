@@ -1,0 +1,11 @@
+feature_set,n_features,model,key,macro_F1,accuracy,F1_Dropout,recall_Dropout,F1_Enrolled,recall_Enrolled,F1_Graduate,recall_Graduate,cv_macro_F1_mean,cv_macro_F1_sd
+early,30,Majority class,majority,0.2222,0.5,0.0,0.0,0.0,0.0,0.6667,1.0,0.222,0.0001
+early,30,Stratified random (seed 42),stratified_random,0.3134,0.3735,0.3141,0.3192,0.1322,0.1261,0.494,0.497,0.3326,0.0197
+early,30,Logistic regression (C=1),logreg,0.6508,0.7364,0.7361,0.7136,0.38,0.3193,0.8364,0.9006,0.6592,0.0113
+early,30,"Logistic regression (tuned, C=1)",logreg,0.6508,0.7364,0.7361,0.7136,0.38,0.3193,0.8364,0.9006,0.6592,0.0113
+early,30,Decision tree (depth 5),tree_depth5,0.5494,0.7033,0.695,0.6901,0.1439,0.084,0.8094,0.9337,0.5762,0.0256
+full,36,Majority class,majority,0.2222,0.5,0.0,0.0,0.0,0.0,0.6667,1.0,0.222,0.0001
+full,36,Stratified random (seed 42),stratified_random,0.3134,0.3735,0.3141,0.3192,0.1322,0.1261,0.494,0.497,0.3326,0.0197
+full,36,Logistic regression (C=1),logreg,0.7047,0.7726,0.7692,0.7512,0.4878,0.4202,0.8571,0.9127,0.6968,0.0151
+full,36,"Logistic regression (tuned, C=1)",logreg,0.7047,0.7726,0.7692,0.7512,0.4878,0.4202,0.8571,0.9127,0.6968,0.0151
+full,36,Decision tree (depth 5),tree_depth5,0.6017,0.7199,0.7124,0.6338,0.2722,0.1933,0.8205,0.9639,0.6388,0.0158

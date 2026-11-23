@@ -3,7 +3,7 @@
 3-class supervised classification (Dropout / Enrolled / Graduate) on the UCI
 *Predict Students' Dropout and Academic Success* dataset (Realinho et al., 2022).
 
-**Status:** Milestone 4 (progress presentation) - baselines from Milestone 3 (`v0.3-baseline`) plus preliminary tree and forest results.
+**Status:** Milestone 5 (final experiments and analysis) - release `v0.5-results`. Earlier: baselines (`v0.3-baseline`), preliminary models (Milestone 4).
 
 ## Structure
 ```
@@ -12,6 +12,7 @@ data/                      data.csv (dataset, semicolon-separated), split_indice
 src/                       data.py (loading, split, feature sets, checksum), models.py (pipelines)
 scripts/run_baseline.py    regenerates the baseline table end to end
 scripts/subgroup_baseline.py   baseline behaviour by group (gender, scholarship, tuition, ...)
+scripts/m5_tune.py, m5_analysis.py, m5_final_test.py, m5_build_log.py   Milestone 5: equal-budget tuning, ablation/sensitivity/robustness, single test evaluation, experiment log
 scripts/run_models.py      Milestone 4: preliminary tuning of decision tree and random forest, learning curves, importances
 notebooks/01_m2_eda.ipynb  group exploratory analysis (crosstabs and boxplots by Target)
 notebooks/02_m3_baseline.ipynb   Milestone 3 walkthrough of the results
@@ -30,6 +31,8 @@ python -m pytest -q                                    # checks
 python scripts/run_baseline.py                         # regenerates baseline results and figures (about 30 s)
 python scripts/subgroup_baseline.py                    # subgroup table and figure (a few seconds)
 python scripts/run_models.py                           # Milestone 4 model comparison (about 2-3 minutes)
+# Milestone 5 (see docs/RESULTS_PACKAGE.md; the test-set step can only run once):
+python scripts/m5_tune.py && python scripts/m5_analysis.py && python scripts/m5_final_test.py --confirm-final && python scripts/m5_build_log.py
 ```
 The scripts stop if `data/data.csv` differs from the approved version. The checksum ignores line endings
 (the original download uses CRLF, the copy stored in Git may use LF; the content is identical).
@@ -42,7 +45,7 @@ The scripts stop if `data/data.csv` differs from the approved version. The check
 | Logistic regression (C=1) | 0.651 | 0.705 |
 | Decision tree (depth 5) | 0.549 | 0.602 |
 
-The test set has not been used. Full table with accuracy, per-class recall and CV results: `results/baseline_table.md`.
+The Milestone 3 table above uses the validation set. Milestone 5 final test results (one use of the test set): `results/m5_final_test_table.csv`. Full table with accuracy, per-class recall and CV results: `results/baseline_table.md`.
 
 ## Data and references
 `data/data.csv` is included in this repository, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).

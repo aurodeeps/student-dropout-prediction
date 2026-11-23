@@ -1,0 +1,50 @@
+{
+  "early|logreg": {
+    "C": 0.04661686413912769,
+    "class_weight": "balanced"
+  },
+  "early|tree": {
+    "min_samples_leaf": 40,
+    "max_depth": 5,
+    "criterion": "gini",
+    "class_weight": "balanced"
+  },
+  "early|rf": {
+    "min_samples_leaf": 3,
+    "max_features": 0.2,
+    "max_depth": 8,
+    "class_weight": "balanced_subsample"
+  },
+  "early|hgb": {
+    "class_weight": "balanced",
+    "l2_regularization": 0.020237789540485076,
+    "learning_rate": 0.0937398313305373,
+    "max_depth": 6,
+    "max_leaf_nodes": 8,
+    "min_samples_leaf": 20
+  },
+  "full|logreg": {
+    "C": 0.04661686413912769,
+    "class_weight": "balanced"
+  },
+  "full|tree": {
+    "min_samples_leaf": 20,
+    "max_depth": 8,
+    "criterion": "entropy",
+    "class_weight": null
+  },
+  "full|rf": {
+    "min_samples_leaf": 5,
+    "max_features": 0.2,
+    "max_depth": 16,
+    "class_weight": "balanced"
+  },
+  "full|hgb": {
+    "class_weight": "balanced",
+    "l2_regularization": 0.004207053950287938,
+    "learning_rate": 0.023406777359270506,
+    "max_depth": null,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 20
+  }
+}
