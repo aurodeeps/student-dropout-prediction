@@ -1,0 +1,7 @@
+feature_set,model,n_configs,best_params,train_macro_F1,val_macro_F1,val_accuracy,val_recall_Dropout,val_recall_Enrolled,val_recall_Graduate,cv_macro_F1_mean,cv_macro_F1_sd,fit_seconds,search_seconds,n_encoded_features
+early,Logistic regression,5,"{""C"": 1}",0.7117,0.6508,0.7364,0.7136,0.3193,0.9006,0.6592,0.0113,0.1029,3.5432,227
+early,Decision tree,15,"{""max_depth"": 7, ""min_samples_leaf"": 20}",0.6342,0.5789,0.6988,0.6901,0.1681,0.8946,0.609,0.0221,0.0452,4.208,227
+early,Random forest,6,"{""max_depth"": null, ""min_samples_leaf"": 1}",1.0,0.6003,0.7184,0.6948,0.1849,0.9247,0.6159,0.022,2.2608,31.0188,227
+full,Logistic regression,5,"{""C"": 1}",0.7454,0.7047,0.7726,0.7512,0.4202,0.9127,0.6968,0.0151,0.1274,3.6336,233
+full,Decision tree,15,"{""max_depth"": 7, ""min_samples_leaf"": 20}",0.6916,0.6362,0.7334,0.6714,0.2773,0.9367,0.6528,0.028,0.0516,4.77,233
+full,Random forest,6,"{""max_depth"": null, ""min_samples_leaf"": 1}",1.0,0.6339,0.738,0.7183,0.2353,0.9307,0.6706,0.0209,2.1852,33.1929,233
