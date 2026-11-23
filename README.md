@@ -3,7 +3,7 @@
 3-class supervised classification (Dropout / Enrolled / Graduate) on the UCI
 *Predict Students' Dropout and Academic Success* dataset (Realinho et al., 2022).
 
-**Status:** Milestone 3 (baseline reproduction) - release `v0.3-baseline`.
+**Status:** Milestone 4 (progress presentation) - baselines from Milestone 3 (`v0.3-baseline`) plus preliminary tree and forest results.
 
 ## Structure
 ```
@@ -12,6 +12,7 @@ data/                      data.csv (dataset, semicolon-separated), split_indice
 src/                       data.py (loading, split, feature sets, checksum), models.py (pipelines)
 scripts/run_baseline.py    regenerates the baseline table end to end
 scripts/subgroup_baseline.py   baseline behaviour by group (gender, scholarship, tuition, ...)
+scripts/run_models.py      Milestone 4: preliminary tuning of decision tree and random forest, learning curves, importances
 notebooks/01_m2_eda.ipynb  group exploratory analysis (crosstabs and boxplots by Target)
 notebooks/02_m3_baseline.ipynb   Milestone 3 walkthrough of the results
 tests/test_pipeline.py     data, split and pipeline checks
@@ -28,6 +29,7 @@ pip install -r requirements.txt
 python -m pytest -q                                    # checks
 python scripts/run_baseline.py                         # regenerates baseline results and figures (about 30 s)
 python scripts/subgroup_baseline.py                    # subgroup table and figure (a few seconds)
+python scripts/run_models.py                           # Milestone 4 model comparison (about 2-3 minutes)
 ```
 The scripts stop if `data/data.csv` differs from the approved version. The checksum ignores line endings
 (the original download uses CRLF, the copy stored in Git may use LF; the content is identical).

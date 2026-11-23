@@ -1,0 +1,11 @@
+{
+  "script": "scripts/run_models.py",
+  "seed": 42,
+  "dataset_md5": "9b2b50f41d0cefbbc3e8222d60032d91",
+  "test_set_used": false,
+  "software": {
+    "python": "3.12.3",
+    "scikit-learn": "1.8.0"
+  },
+  "runtime_seconds": 135.0
+}
